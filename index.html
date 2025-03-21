@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Exam Schedule</title>
+    <script src="https://unpkg.com/read-excel-file@4.x/bundle/read-excel-file.min.js"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>See your Exam Routine</h2>
+
+        <div class="input-group">
+            <label for="courseCode">Course Code:</label>
+            <input type="text" id="courseCode" placeholder="Enter Course Code">
+        </div>
+
+        <div class="input-group">
+            <label for="section">Section:</label>
+            <input type="text" id="section" placeholder="Enter Section">
+        </div>
+
+        <button class="search-btn" onclick="handleSearch()">🔍 Search</button>
+
+        <h3>Search Result:</h3>
+        <div id="result-card" class="hidden"></div>
+    </div>
+
+    <script src="./Js/FindRoomNo.js"></script>
+</body>
+</html>
