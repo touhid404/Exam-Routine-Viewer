@@ -9,13 +9,13 @@
 }
 
 body {
-    background: linear-gradient(135deg, #007bff, #00c6ff); 
+    
     background: #2B303B;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 5px;
 }
 
 /* Glassmorphism container */
@@ -24,7 +24,7 @@ body {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 18px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 450px;
@@ -46,22 +46,24 @@ h2 {
 
 /* Input fields */
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     text-align: left;
 }
 
 label {
     font-weight: 600;
+    font-style: italic;
     display: block;
     margin-bottom: 5px;
     color: #fff;
+    margin-left: 10px;
 }
 
 input {
     width: 100%;
     padding: 12px;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 1em;
     background: rgba(255, 255, 255, 0.3);
     color: #fff;
@@ -78,20 +80,20 @@ input:focus {
 
 /* Search button */
 .search-btn {
-    margin-top: 10px;
+    margin-top: 12px;
     width: 100%;
     padding: 12px;
-    background: blue;
+    background: #336D82;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 1em;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .search-btn:hover {
-    background: blueviolet;
+    background:#2B303B;
     transform: scale(1.05);
 }
 
@@ -105,8 +107,8 @@ h3{
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 15px;
-    margin-top: 20px;
+    padding: 8px;
+    margin-top: 15px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     text-align: left;
@@ -114,7 +116,7 @@ h3{
 }
 
 .result-item {
-    padding: 10px;
+    padding: 8px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 1rem;
 }
@@ -147,7 +149,7 @@ h3{
 @media (max-width: 500px) {
     .container {
         width: 100%;
-        padding: 15px;
+        padding: 10px;
     }
 
     h2 {
