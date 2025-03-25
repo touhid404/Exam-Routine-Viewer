@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UIU Exam Schedule</title>
     <script src="https://unpkg.com/read-excel-file@4.x/bundle/read-excel-file.min.js"></script>
-    <link rel="stylesheet" href="./Styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./Styles/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/873c85c170.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <h2>View Your Exam Schedule</h2>
+      <h2>View Your Exam Schedule</h2>
 
-        <div class="input-group">
-            <label for="courseCode">Course Code:</label>
-            <input type="text" id="courseCode" placeholder="Enter Your Course Code">
-        </div>
+      <div class="input-group">
+        <label for="courseCode">Course Code:</label>
+        <input
+          type="text"
+          id="courseCode"
+          placeholder="Enter Your Course Code"
+        />
+      </div>
 
-        <div class="input-group">
-            <label for="section">Section:</label>
-            <input type="text" id="section" placeholder="Enter Your Section">
-        </div>
+      <div class="input-group">
+        <label for="section">Section:</label>
+        <input type="text" id="section" placeholder="Enter Your Section" />
+      </div>
 
-        <button class="search-btn" onclick="handleSearch()">🔍 Search Routine</button>
+      <button class="search-btn" onclick="handleSearch()">
+        <i class="fa-solid fa-magnifying-glass"></i> 
+        <span>Search Routine</span>
+      </button>
 
+      <div class="details">
         <h3>Routine Details</h3>
-        <div id="result-card" class="hidden"></div>
+        <button class="" id="pronounce-sentence">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+      </div>
+      <div id="result-card" class="hidden"></div>
     </div>
 
     <script src="./Js/FindRoomNo.js"></script>
-</body>
+  </body>
 </html>

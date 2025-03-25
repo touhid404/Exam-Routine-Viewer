@@ -75,3 +75,16 @@ function handleSearch() {
     alert("Please enter both Course Code and Section.");
   }
 }
+
+
+
+document.getElementById("pronounce-sentence").addEventListener("click", function() {
+  const sentence = "Please enter both Course Code and Section.";
+  pronounceWord(sentence);
+});
+
+function pronounceWord(w) {
+  const utterance = new SpeechSynthesisUtterance(w);
+  utterance.lang = 'en-EN'; // English
+  window.speechSynthesis.speak(utterance);
+}

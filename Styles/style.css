@@ -56,7 +56,7 @@ h2 {
 
 /* Input fields */
 .input-group {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -90,7 +90,7 @@ input:focus {
 
 /* Search button */
 .search-btn {
-    margin-top: 12px;
+    margin-top: 20px;
     width: 100%;
     padding: 12px;
     background: #336D82;
@@ -100,6 +100,10 @@ input:focus {
     font-size: 1em;
     cursor: pointer;
     transition: 0.3s;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-btn:hover {
@@ -111,6 +115,40 @@ h3{
     margin-top: 5px;
     font-size: 16px;
 }
+
+
+
+.details{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.details button{
+    padding: 10px 15px;
+    background:#336D82;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.details button:hover {
+    background:#2B303B;
+    transform: scale(1.05);
+}
+
+.details h3{
+    border: 3px solid #336D82;
+    padding: 7px;
+    border-radius: 10px;
+}
+    
 
 /* Stylish result card */
 #result-card {
