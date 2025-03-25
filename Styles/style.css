@@ -1,11 +1,21 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* fancy font */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* font-family: "Boldonse", system-ui; */
+    /* font-family: "Josefin Sans", sans-serif; */
+  
 }
 
 body {
