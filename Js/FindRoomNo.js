@@ -1,6 +1,6 @@
 async function fetchAndSearchExcel(courseCode, section) {
   try {
-    const response = await fetch("../ExcelFiles/revised_final_exam_schedule_sose_undergrad_243_.xlsx"); // Adjust path
+    const response = await fetch("../ExcelFiles/mid-term-exam-schedule_251_sose.xlsx"); // Adjust path
     if (!response.ok) throw new Error("File not found");
 
     const blob = await response.blob();
@@ -44,7 +44,7 @@ async function fetchAndSearchExcel(courseCode, section) {
     resultCard.classList.add("hidden");
 
     if (!matchedRow) {
-      resultCard.innerHTML = "<p>No matching data found.</p>";
+      resultCard.innerHTML = "<p>Please enter valid course code and section.</p>";
       resultCard.classList.remove("hidden");
       return;
     }
